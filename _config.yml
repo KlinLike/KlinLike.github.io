@@ -27,7 +27,7 @@ url: "https://KlinLike.github.io" # the base hostname & protocol for your site, 
 github_username:  KlinLike
 
 # Build settings
-theme: minima
+theme: texture
 plugins:
   - jekyll-feed
 
@@ -50,3 +50,51 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+
+
+# ----------------------------------------------------
+# Texture Theme Settings (Texture 主题专属设置)
+# ----------------------------------------------------
+texture:
+  # Title for the blog index page.
+  # 博客主页的标题
+  title: Klin's Blog
+
+  # Tagline for the blog index page.
+  # 主页的标语或副标题
+  tagline: 记录各种关于技术小文章
+
+  # Show the texture picker.
+  # (可以在页面右下角切换背景纹理，很有趣)
+  showPicker: true
+
+  # Post unique share links to social networks
+  # (文章底部的分享链接)
+  shareLinks: true
+
+  # Enable Disqus comments
+  # (Disqus 评论系统)
+  disqus_shortname:
+
+  # Enable Google Analytics
+  # (谷歌分析)
+  google_analytics:
+
+  # Navigation links
+  # (导航链接)
+  navigation:
+    - title: Home
+      url: "/"
+    - title: About
+      url: "/about"
+    # - title: My Work # 您可以取消注释并添加更多页面
+    #   url: "/my-work"
+
+  # Styles ('yellow', 'red', 'black', 'blue', 'green', 'purple')
+  style: black
+
+  # Background image for the homepage
+  # (主页的背景图片，可以使用 Unsplash 的随机图片服务)
+  background_image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
