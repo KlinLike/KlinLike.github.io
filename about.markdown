@@ -14,6 +14,7 @@ permalink: /about/
 
 我非常乐于与同样走在这条路上的朋友交流。
 * **GitHub**: [KlinLike](https://github.com/KlinLike)
+* **简书**: [klinlike - 简书](https://www.jianshu.com/u/6f032a16d2a8)
 * **Email**: `mi-cheng@outlook.com`
 
 感谢你的来访！
