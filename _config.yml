@@ -51,3 +51,8 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# 明确指定 Sass 编译器的配置
+sass:
+  sass_dir: _sass
+  style: compressed
