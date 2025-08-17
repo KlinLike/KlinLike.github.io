@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "对 C++ 中整型转换问题的一些探讨"
+title:  "对 C++中整型转换问题的一些探讨"
 date:   2024-06-30 18:22:00 -0700
 tags: [c++, programming]
 ---
