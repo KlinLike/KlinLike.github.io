@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "📌C/C++中static与链接器的关系"
+title:  "🌱C/C++中static与链接器的关系"
 date:   2025-08-20 20:38:00 +0800
 tags: [c, cpp, compiler]
 ---
