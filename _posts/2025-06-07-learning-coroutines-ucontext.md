@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "学习协程小记 (ucontext)"
+title:  "🌳学习协程小记 (ucontext)"
 date:   2025-06-07 20:53:14 +0800
 tags: [coroutine, ucontext, concurrency, cpp]
 ---

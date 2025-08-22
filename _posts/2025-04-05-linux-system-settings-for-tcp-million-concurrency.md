@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux实现TCP百万并发需要进行的系统设置"
+title:  "🌱Linux实现TCP百万并发需要进行的系统设置"
 date:   2025-04-05 23:28:56 +0800
 tags: [linux, networking, tcp, concurrency, performance]
 ---

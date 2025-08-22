@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "如何解决递归死锁的问题"
+title:  "🌱如何解决递归死锁的问题"
 date:   2025-08-06 22:48:47 +0800
 tags: [deadlock, concurrency, mutex, recursive-mutex, cpp]
 ---

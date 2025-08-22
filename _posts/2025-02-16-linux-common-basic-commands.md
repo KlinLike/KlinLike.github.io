@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linux常用基础命令"
+title:  "🌱Linux常用基础命令"
 date:   2025-02-16 14:56:05 +0800
 tags: [linux]
 ---
