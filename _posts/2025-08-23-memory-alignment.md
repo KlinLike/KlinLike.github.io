@@ -20,3 +20,26 @@ tags: [memory, c, c++]
 
 现代的CPU架构，如x86，会处理上述的多次读取和拼接操作，对程序员是透明的，但还是会消耗性能。
 但很多嵌入式处理器，如老ARM架构，为了降低功耗和成本，直接不支持非对齐访问异常。此时如果访问的地址不符合数据对齐要求，就会触发一个硬件异常。
+
+# C内存分配如何对齐
+```
+// 非对齐分配
+char* buffer = malloc(size);
+chat* ptr = buffer + 1;
+
+// 使用对齐分配函数
+void* ptr = memalign(4, size); // 4Byte对齐
+
+// 结构体对齐
+struct __attribute__((aligned(4))) My {
+  char b;
+  int a;
+};
+
+// 编译器指令对齐
+#pragma pack(4)
+struct My {
+  int a;
+  char b;
+};
+#pragma pack()
