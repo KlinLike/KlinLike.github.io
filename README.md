@@ -61,6 +61,11 @@
     ```bash
     bundle exec jekyll serve
     ```
+    or
+    ```
+    jekyll serve
+    ```
+    
     * 这个命令会启动一个本地的 web 服务器。
     * `bundle exec` 确保了你使用的是在 `Gemfile.lock` 中定义的、与项目完全匹配的 Jekyll 版本，避免了潜在的依赖冲突。
 
