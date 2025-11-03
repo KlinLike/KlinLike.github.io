@@ -58,3 +58,13 @@ tags: [Animation]
     velocity *= 0.9; // 每帧衰减10%的速度
     position += velocity;
     ```
+
+
+---
+
+## 实用工具：Easings.net
+
+**网址**：https://easings.net/zh-cn
+
+**描述**：
+Easings.net 是一个专门展示 CSS 缓动函数的可视化参考网站，对于理解和选择动画曲线非常有帮助。
