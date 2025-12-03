@@ -4,20 +4,14 @@
 # 为 Jekyll 博客快速创建一篇使用北京 (+0800) 时区的新文章模板
 
 import os
-from datetime import datetime
-# zoneinfo 是 Python 3.9+ 的标准库，用于处理 IANA 时区
-from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
+from datetime import datetime, timedelta, timezone
 
 def create_jekyll_post_template():
     """
     非交互式地创建一篇新的 Jekyll 博客文章模板。
     """
-    try:
-        # 1. 设置时区为北京时间 ("Asia/Shanghai")
-        beijing_tz = ZoneInfo("Asia/Shanghai")
-    except ZoneInfoNotFoundError:
-        print("❌ 错误：找不到 'Asia/Shanghai' 时区。请确保你的环境支持 IANA 时区数据库。")
-        return
+    # 1. 设置时区为北京时间 (UTC+8)
+    beijing_tz = timezone(timedelta(hours=8))
 
     # 2. 获取当前北京时间
     now = datetime.now(beijing_tz)
