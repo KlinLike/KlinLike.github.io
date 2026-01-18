@@ -195,6 +195,6 @@ int main(){
 ```
 
 &nbsp;&nbsp;分别复制代码到两个项目并运行（先运行server），就可以看到运行结果：
-![运行结果图]({{ site.baseurl }}/assets/images/2025-01-20-socket-programming-basics-4.png)
+![运行结果图](/images/2025-01-20-socket-programming-basics-4.png)
 
 &nbsp;&nbsp;*还有一些细节问题可以注意，比如可以把c_str()返回的结尾空字符一并发送，或者是要把buffer size减一，以免没有位置写入\0，但这些都是无伤大雅的小问题。*

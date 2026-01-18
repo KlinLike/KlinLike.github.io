@@ -84,21 +84,21 @@ sudo groupdel newgroup
 - top ： 动态地显示进程和资源的占用情况（ctrl+c退出）
 
 1. 使用 ps -ef 可以查看更加详细的进程信息：
-![ps -ef]({{ site.baseurl }}/assets/images/2025216/ps -ef.png)
+![ps -ef](/images/2025216/ps -ef.png)
 
 2. 如果安装了 htop，可以用更好的界面来查看top指令的信息：
-![htop]({{ site.baseurl }}/assets/images/2025216/htop.png)
+![htop](/images/2025216/htop.png)
 
 # 网络
 - ping ： 测试网络连通性
 - ifconfig 和 ip addr show ： 查看网络接口的信息
 - ss ： 查看网络连接和接口状态
 
-![ping]({{ site.baseurl }}/assets/images/2025216/ping.png)
+![ping](/images/2025216/ping.png)
 
-![ifconfig & ip addr show]({{ site.baseurl }}/assets/images/2025216/ifconfig & ip addr show.png)
+![ifconfig & ip addr show](/images/2025216/ifconfig & ip addr show.png)
 
-![ss]({{ site.baseurl }}/assets/images/2025216/ss.png)
+![ss](/images/2025216/ss.png)
 
 
 

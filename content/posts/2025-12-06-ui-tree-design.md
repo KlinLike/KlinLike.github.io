@@ -8,7 +8,7 @@ tags: [framework, gui, data-structure]
 UI树是很多UI框架中使用的底层数据结构，这种结构容易理解，维护起来也比较方便。下面我会简单说明一下UI树的设计和我的理解。
 
 
-![UI树指针结构图]({{ site.baseurl }}/assets/images/2025-12-06-UI-Tree.png)
+![UI树指针结构图](/images/2025-12-06-UI-Tree.png)
 
 这是一个 **Page** 内包含有 `Btn`、`Img`、`Text` 的情况：
 

@@ -34,4 +34,4 @@ client会从 seq = x + 1 开始发送数据，此时 seq = x + 1；
 
 # 流程图
 最后附上一个流程图
-![三次握手和数据传输]({{ site.baseurl }}/assets/images/2025-08-17-seq-num-meaning-in-handshake-and-transfer.png)
+![三次握手和数据传输](/images/2025-08-17-seq-num-meaning-in-handshake-and-transfer.png)

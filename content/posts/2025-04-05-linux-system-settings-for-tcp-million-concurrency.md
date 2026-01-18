@@ -183,7 +183,7 @@ net.ipv4.tcp_tw_reuse = 1
 
 **⚠️ 重要提示**：在高并发场景中，这两个状态是需要特别关注的。
 
-![设置完成后的sysctl.conf]({{ site.baseurl }}/assets/images/2025-03-11-simple-implementation-of-posix-thread-pool.png)
+![设置完成后的sysctl.conf](/images/2025-03-11-simple-implementation-of-posix-thread-pool.png)
 
 ---
 

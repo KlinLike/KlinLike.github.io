@@ -106,7 +106,7 @@ tags: [socket, networking, programming, cpp]
 
 # 通信流程
 以TCP为例，简要说明通信流程和用到的函数。
-![客户端与服务器通信的简要流程]({{ site.baseurl }}/assets/images/2024-12-29-socket-programming-basics-1.png)
+![客户端与服务器通信的简要流程](/images/2024-12-29-socket-programming-basics-1.png)
 
 &nbsp;&nbsp;*bind函数因为参数addr的长度不定，所以有参数addr_len。*
 
