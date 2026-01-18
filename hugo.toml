@@ -1,63 +1,129 @@
 baseURL = "https://KlinLike.github.io/"
 languageCode = "zh-CN"
 title = "Klin's Blog"
-theme = "PaperMod"
-hasCJKLanguage = true  # 支持中文字数统计
+theme = "stack"
+hasCJKLanguage = true
+
+# 版权信息
+copyright = "Klin"
+
+# 分页
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  post = "/p/:slug/"
+  page = "/:slug/"
 
 [params]
-  author = "Klin"
-  description = "我的blog，记录各种关于技术小文章，欢迎讨论和指正。"
+  mainSections = ["posts"]
+  featuredImageField = "image"
+  rssFullContent = true
   
-  # PaperMod 主题配置
-  ShowReadingTime = false  # 关闭阅读时间（技术文章包含代码，预估不准确）
-  ShowShareButtons = false
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowWordCount = true
-  ShowRssButtonInSectionTermList = true
-  UseHugoToc = true
-  disableSpecial1stPost = false
-  disableScrollToTop = false
-  comments = false
-  hidemeta = false
-  hideSummary = false
-  showtoc = false  # 关闭文章目录
-  tocopen = false
+  # 网站描述
+  description = "记录我在开发中遇到的问题、想法、解决方案等"
+  
+  # 页脚配置
+  [params.footer]
+    since = 2024
+    customText = ""
 
-  [params.homeInfoParams]
-    Title = "Klin's Blog"
-    Content = "我的blog，记录各种关于技术小文章，欢迎讨论和指正。"
+  # 日期格式
+  [params.dateFormat]
+    published = "2006-01-02"
+    lastUpdated = "2006-01-02 15:04"
 
-  [[params.socialIcons]]
-    name = "github"
-    url = "https://github.com/KlinLike"
+  # 侧边栏配置
+  [params.sidebar]
+    emoji = "🍥"
+    subtitle = "我的blog，记录在开发中遇到的问题、想法、解决方案等，欢迎讨论和指正。"
+    
+    [params.sidebar.avatar]
+      enabled = true
+      local = false
+      src = "https://avatars.githubusercontent.com/u/yourusername?v=4"
 
-  [[params.socialIcons]]
-    name = "email"
-    url = "mailto:mi-cheng@outlook.com"
+  # 文章配置
+  [params.article]
+    math = false
+    toc = true
+    readingTime = true
+    
+    [params.article.license]
+      enabled = false
 
+  # 评论（关闭）
+  [params.comments]
+    enabled = false
+
+  # 代码高亮
+  [params.highlight]
+    copy = true
+    lineNos = true
+
+# 菜单配置
 [menu]
   [[menu.main]]
-    identifier = "posts"
-    name = "文章"
-    url = "/posts/"
-    weight = 10
+    identifier = "home"
+    name = "主页"
+    url = "/"
+    weight = -100
+    [menu.main.params]
+      icon = "home"
   
   [[menu.main]]
     identifier = "about"
     name = "关于"
     url = "/about/"
-    weight = 20
+    weight = -90
+    [menu.main.params]
+      icon = "user"
+  
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = -80
+    [menu.main.params]
+      icon = "archives"
+  
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = -70
+    [menu.main.params]
+      icon = "search"
 
+# 社交链接
+[[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/KlinLike"
+  [menu.social.params]
+    icon = "brand-github"
+
+# 输出格式
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
+# 代码高亮配置
 [markup]
   [markup.highlight]
     style = "monokai"
     lineNos = true
     lineNumbersInTable = true
+  
   [markup.goldmark]
     [markup.goldmark.renderer]
-      unsafe = true  # 允许在 Markdown 中使用原始 HTML
+      unsafe = true
+  
+  [markup.tableOfContents]
+    endLevel = 4
+    ordered = true
+    startLevel = 2
+
+# 分类法
+[taxonomies]
+  category = "categories"
+  tag = "tags"
