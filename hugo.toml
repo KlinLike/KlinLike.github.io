@@ -1,6 +1,6 @@
 baseURL = "https://KlinLike.github.io/"
 languageCode = "zh-CN"
-title = "Klin's Blog"
+title = "Klin's Notebook 🍉"
 theme = "stack"
 hasCJKLanguage = true
 
@@ -45,7 +45,7 @@ copyright = "Klin"
   [params.article]
     math = false
     toc = true
-    readingTime = true
+    readingTime = false
     
     [params.article.license]
       enabled = false
