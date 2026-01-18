@@ -1,5 +1,5 @@
 ---
-title:  "🌱浅谈UI树的结构设计"
+title:  "浅谈UI树的结构设计"
 date: 2025-12-06T14:51:29+08:00
 tags: [framework, gui, data-structure]
 ---

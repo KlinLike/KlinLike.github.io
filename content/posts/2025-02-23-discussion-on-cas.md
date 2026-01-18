@@ -1,5 +1,5 @@
 ---
-title:  "🌱对CAS的探讨"
+title:  "对CAS的探讨"
 date: 2025-02-23T00:38:07+08:00
 tags: [cas, concurrency, lock-free, cpp]
 ---

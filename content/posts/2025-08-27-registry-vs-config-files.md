@@ -1,5 +1,5 @@
 ---
-title:  "🌱Windows下注册表和配置文件该如何选择"
+title:  "Windows下注册表和配置文件该如何选择"
 date: 2025-08-27T19:45:35+08:00
 tags: [Windows, 注册表]
 ---

@@ -1,5 +1,5 @@
 ---
-title:  "🌱TCP Write后直接Close安全吗?"
+title:  "TCP Write后直接Close安全吗?"
 date: 2025-12-04T00:42:32+08:00
 tags: [tcp, network, socket, http]
 ---

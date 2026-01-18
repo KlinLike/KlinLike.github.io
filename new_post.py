@@ -32,7 +32,7 @@ def create_hugo_post_template():
 
     # 4. 定义 Hugo Front Matter 模板
     template = f"""---
-title: "🌱🌳TITLE"
+title: "在此输入标题"
 date: {full_timestamp}
 tags: [TAG1, TAG2]
 draft: false

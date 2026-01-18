@@ -1,5 +1,5 @@
 ---
-title:  "🌳基于POSIX的线程池的简单实现"
+title:  "基于POSIX的线程池的简单实现"
 date: 2025-03-11T22:56:40+08:00
 tags: [posix, thread, thread-pool, cpp]
 ---

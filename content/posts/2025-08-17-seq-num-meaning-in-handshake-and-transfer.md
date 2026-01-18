@@ -1,5 +1,5 @@
 ---
-title:  "🌱seq num 在握手阶段和传输阶段的不同含义"
+title:  "seq num 在握手阶段和传输阶段的不同含义"
 date: 2025-08-06T18:33:14+08:00
 tags: [tcp, networking, protocol, sequence-number]
 ---

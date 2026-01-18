@@ -1,5 +1,5 @@
 ---
-title:  "🌱Gomobile 避坑：CGO导致的线程爆炸与iOS后台策略"
+title:  "Gomobile 避坑：CGO导致的线程爆炸与iOS后台策略"
 date: 2026-01-18T19:09:30+08:00
 tags: [golang, gmp, scheduler]
 ---

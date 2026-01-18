@@ -1,5 +1,5 @@
 ---
-title:  "🌳使用有限状态机计算文本中英语单词的数量（C语言）"
+title:  "使用有限状态机计算文本中英语单词的数量（C语言）"
 date: 2025-02-16T22:07:42+08:00
 tags: [c, algorithm, fsm, state-machine]
 ---

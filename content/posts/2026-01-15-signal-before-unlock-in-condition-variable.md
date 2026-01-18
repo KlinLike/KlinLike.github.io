@@ -1,5 +1,5 @@
 ---
-title:  "🌱条件变量先 Signal 还是先 Unlock？"
+title:  "条件变量先 Signal 还是先 Unlock？"
 date: 2026-01-15T20:34:58+08:00
 tags: [multithreading, c++, condition-variable, mutex]
 ---

@@ -1,5 +1,5 @@
 ---
-title:  "🌱阻塞/非阻塞socket的设计思想"
+title:  "阻塞/非阻塞socket的设计思想"
 date: 2026-01-12T20:39:00+08:00
 tags: [socket, programming-philosophy]
 ---

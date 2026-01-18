@@ -1,5 +1,5 @@
 ---
-title:  "🌳对Socket基本用法的复习和理解 - Part 3"
+title:  "对Socket基本用法的复习和理解 - Part 3"
 date: 2025-01-19T17:22:42+08:00
 tags: [socket, networking, programming, cpp]
 ---
