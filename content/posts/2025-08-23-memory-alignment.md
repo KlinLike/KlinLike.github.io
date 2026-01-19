@@ -1,7 +1,8 @@
 ---
-title:  "浅谈内存对齐"
+title: "浅谈内存对齐"
 date: 2025-08-23T14:03:13+08:00
-tags: [memory, c, c++]
+categories: [系统与性能]
+tags: [memory, c, cpp, performance]
 ---
 
 # 什么是内存对齐

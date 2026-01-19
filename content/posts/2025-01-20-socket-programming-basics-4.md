@@ -1,7 +1,8 @@
 ---
-title:  "对Socket基本用法的复习和理解 - Part 4"
+title: "对Socket基本用法的复习和理解 - Part 4"
 date: 2025-01-20T22:48:03+08:00
-tags: [socket, networking, programming, cpp]
+categories: [网络]
+tags: [socket, networking, cpp]
 ---
 
 # 前言

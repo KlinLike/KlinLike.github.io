@@ -1,6 +1,7 @@
 ---
-title:  "Reactor模式 vs 多线程模式"
+title: "Reactor模式 vs 多线程模式"
 date: 2025-11-10T20:17:57+08:00
+categories: [并发, 系统与性能]
 tags: [reactor, multithreading, performance]
 ---
 

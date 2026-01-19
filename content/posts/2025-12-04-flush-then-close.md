@@ -1,7 +1,8 @@
 ---
 title:  "TCP Write后直接Close安全吗?"
 date: 2025-12-04T00:42:32+08:00
-tags: [tcp, network, socket, http]
+categories: [网络]
+tags: [tcp, socket, networking]
 ---
 
 我在实现服务器发送一个网页给浏览器的功能时，发现如果只是设置了 HTTP 头中的 `Connection: close`，浏览器不一定会保证在收到所有数据后关闭连接。也就是说，寄希望于设置了这个字段后浏览器会主动关闭连接是不现实的，虽然大多数浏览器都遵循这个字段。

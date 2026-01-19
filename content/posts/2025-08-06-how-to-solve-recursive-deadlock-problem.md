@@ -1,7 +1,8 @@
 ---
-title:  "如何解决递归死锁的问题"
+title: "如何解决递归死锁的问题"
 date: 2025-08-06T22:48:47+08:00
-tags: [deadlock, concurrency, mutex, recursive-mutex, cpp]
+categories: [并发]
+tags: [concurrency, mutex, cpp]
 ---
 
 # 什么是递归死锁问题？

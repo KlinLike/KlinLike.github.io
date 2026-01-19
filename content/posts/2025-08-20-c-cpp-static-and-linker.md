@@ -1,7 +1,8 @@
 ---
-title:  "C/C++中static与链接器的关系"
+title: "C/C++中static与链接器的关系"
 date: 2025-08-20T20:38:00+08:00
-tags: [c, cpp, compiler]
+categories: [编程语言]
+tags: [c, cpp, compiler, linker]
 ---
 
 # C/C++是如何编译多个文件的

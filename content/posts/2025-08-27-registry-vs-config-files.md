@@ -1,7 +1,8 @@
 ---
-title:  "Windows下注册表和配置文件该如何选择"
+title: "Windows下注册表和配置文件该如何选择"
 date: 2025-08-27T19:45:35+08:00
-tags: [Windows, 注册表]
+categories: [工具与流程]
+tags: [windows]
 ---
 
 # 必须使用注册表的情况

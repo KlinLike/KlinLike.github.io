@@ -1,7 +1,8 @@
 ---
 title:  "C语言结构体相互引用为什么能工作"
 date: 2025-12-03T16:48:52+08:00
-tags: [memory, compiler]
+categories: [编程语言]
+tags: [c, memory, compiler]
 ---
 
 ```c

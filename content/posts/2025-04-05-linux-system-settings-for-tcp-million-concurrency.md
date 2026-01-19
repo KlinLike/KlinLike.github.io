@@ -1,7 +1,8 @@
 ---
-title:  "Linux实现TCP百万并发需要进行的系统设置"
+title: "Linux实现TCP百万并发需要进行的系统设置"
 date: 2025-04-05T23:28:56+08:00
-tags: [linux, networking, tcp, concurrency, performance]
+categories: [网络, 系统与性能]
+tags: [linux, networking, tcp, performance]
 ---
 
 # 1. 设置文件描述符限制

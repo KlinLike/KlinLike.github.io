@@ -1,7 +1,8 @@
 ---
-title:  "LLM基本原理及思考"
+title: "LLM基本原理及思考"
 date: 2025-10-27T15:07:20+08:00
-tags: [AI, LLM]
+categories: [工具与流程]
+tags: [ai, llm]
 ---
 
 # 前言

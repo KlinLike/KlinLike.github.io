@@ -1,7 +1,8 @@
 ---
-title:  "C/C++不同字符串的内存性能区别"
+title: "C/C++不同字符串的内存性能区别"
 date: 2025-09-11T10:28:16+08:00
-tags: [C, C++, 内存性能]
+categories: [编程语言]
+tags: [c, cpp, memory, performance]
 ---
 
 在C和C++中，字符串的创建本质上是 为一串字符分配内存。

@@ -1,7 +1,8 @@
 ---
-title:  "基于POSIX的线程池的简单实现"
+title: "基于POSIX的线程池的简单实现"
 date: 2025-03-11T22:56:40+08:00
-tags: [posix, thread, thread-pool, cpp]
+categories: [并发]
+tags: [multithreading, cpp]
 ---
 
 *本文的主要内容是我学习线程池时候写下的代码，在此基础上加上一些我的理解和关键知识点*

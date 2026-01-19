@@ -1,7 +1,8 @@
 ---
-title:  "Cpp函数参数过多如何优化->构建器模式"
+title: "Cpp函数参数过多如何优化->构建器模式"
 date: 2025-09-15T19:30:42+08:00
-tags: [C++, 设计模式]
+categories: [软件工程]
+tags: [cpp, design-pattern]
 ---
 
 # Intro

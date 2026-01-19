@@ -1,7 +1,8 @@
 ---
-title:  "为何模块之间传递指针可以保证封装性（C语言）"
+title: "为何模块之间传递指针可以保证封装性（C语言）"
 date: 2025-09-16T19:49:07+08:00
-tags: [C, C++, 不透明指针, 软甲架构]
+categories: [软件工程]
+tags: [c, encapsulation, architecture]
 ---
 
 # 接口与实现分离

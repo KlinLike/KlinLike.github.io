@@ -1,7 +1,8 @@
 ---
-title:  "动画曲线还是物理模拟"
+title: "动画曲线还是物理模拟"
 date: 2025-11-03T11:24:15+08:00
-tags: [Animation]
+categories: [软件工程]
+tags: [ui, animation]
 ---
 
 # 物理模拟与动画曲线

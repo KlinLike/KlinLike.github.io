@@ -1,7 +1,8 @@
 ---
 title:  "条件变量先 Signal 还是先 Unlock？"
 date: 2026-01-15T20:34:58+08:00
-tags: [multithreading, c++, condition-variable, mutex]
+categories: [并发]
+tags: [multithreading, cpp, condition-variable, mutex]
 ---
 
 在 C/C++ 多线程编程中，使用条件变量和互斥锁的时候，先 `unlock` 还是先 `signal`/`notify` 都是逻辑正确的，但实际上它们的表现存在细微的差别。

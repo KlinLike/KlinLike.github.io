@@ -1,6 +1,7 @@
 ---
-title:  "Linux常用基础命令"
+title: "Linux常用基础命令"
 date: 2025-02-16T14:56:05+08:00
+categories: [工具与流程]
 tags: [linux]
 ---
 

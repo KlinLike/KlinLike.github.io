@@ -1,6 +1,7 @@
 ---
 title:  "CAS的版本号如何解决ABA问题"
 date: 2025-12-12T11:34:55+08:00
+categories: [并发]
 tags: [cas, atomic, lock-free]
 ---
 

@@ -1,7 +1,8 @@
 ---
-title:  "无锁队列如何使用CAS入队"
+title: "无锁队列如何使用CAS入队"
 date: 2025-08-08T23:04:12+08:00
-tags: [lock-free, queue, cas, concurrency, data-structure, cpp]
+categories: [并发]
+tags: [lock-free, cas, data-structure, cpp]
 ---
 
 # 思想

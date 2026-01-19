@@ -1,7 +1,8 @@
 ---
-title:  "早期软件项目的开发策略"
+title: "早期软件项目的开发策略"
 date: 2025-11-12T10:35:54+08:00
-tags: [MVP, 软件工程]
+categories: [软件工程]
+tags: [software-engineering, workflow]
 ---
 
 # 前言

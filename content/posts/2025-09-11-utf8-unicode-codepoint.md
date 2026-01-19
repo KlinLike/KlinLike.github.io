@@ -1,7 +1,8 @@
 ---
-title:  "UTF-8与Unicode码点的关系"
+title: "UTF-8与Unicode码点的关系"
 date: 2025-09-11T14:33:30+08:00
-tags: [Unicode, UTF-8, 字符编码]
+categories: [编程语言]
+tags: [unicode, utf-8]
 ---
 
 # 什么是码点

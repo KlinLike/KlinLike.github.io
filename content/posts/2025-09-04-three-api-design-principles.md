@@ -1,7 +1,8 @@
 ---
-title:  "三个框架/类/API的设计准则"
+title: "三个框架/类/API的设计准则"
 date: 2025-09-04T16:35:58+08:00
-tags: [软件设计, 设计原则]
+categories: [软件工程]
+tags: [architecture, api-design, software-engineering]
 ---
 
 # 1. 用户驱动原则

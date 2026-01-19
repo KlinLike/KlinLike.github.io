@@ -1,6 +1,7 @@
 ---
-title:  "Git如何使用多分支进行开发"
+title: "Git如何使用多分支进行开发"
 date: 2025-11-18T10:02:16+08:00
+categories: [工具与流程]
 tags: [git, workflow]
 ---
 

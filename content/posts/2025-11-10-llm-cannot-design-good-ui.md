@@ -1,7 +1,8 @@
 ---
-title:  "为什么LLM做不好UI设计"
+title: "为什么LLM做不好UI设计"
 date: 2025-11-10T14:56:13+08:00
-tags: [LLM, AI]
+categories: [工具与流程]
+tags: [ai, llm, ui]
 ---
 
 # 前言

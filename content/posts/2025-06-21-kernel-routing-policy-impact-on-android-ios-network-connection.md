@@ -1,7 +1,8 @@
 ---
-title:  "内核路由策略对Android与iOS网络连接行为的影响"
+title: "内核路由策略对Android与iOS网络连接行为的影响"
 date: 2025-06-21T22:15:10+08:00
-tags: [android, ios, networking, kernel, routing, vpn]
+categories: [网络]
+tags: [android, ios, networking, linux]
 ---
 
 最近在开发一个支持Android和iOS的库，发现当开启VPN后，Android创建连接的速度比iOS快很多，最后了解到这是因为Android和iOS的Socket行为策略不同导致的。下面来探究为什么会出现这种差异。

@@ -1,7 +1,8 @@
 ---
-title:  "怎么理解网络四层模型和地址的对应关系"
+title: "怎么理解网络四层模型和地址的对应关系"
 date: 2025-08-20T16:31:05+08:00
-tags: [network]
+categories: [网络]
+tags: [networking, protocol]
 ---
 
 # 应用层

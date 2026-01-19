@@ -1,7 +1,8 @@
 ---
-title:  "进程切换开销比线程切换大的根本原因"
+title: "进程切换开销比线程切换大的根本原因"
 date: 2025-11-26T14:47:45+08:00
-tags: [performance, thread]
+categories: [系统与性能]
+tags: [linux, performance, multithreading]
 ---
 
 进程切换之所以比线程切换昂贵了很多，主要原因有两个：

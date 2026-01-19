@@ -1,7 +1,8 @@
 ---
 title:  "从内核态/用户态看零拷贝为什么快"
 date: 2025-12-31T18:40:22+08:00
-tags: [Linux, zero-copy, io_uring]
+categories: [系统与性能]
+tags: [linux, zero-copy, io-uring, performance]
 ---
 
 要理解零拷贝技术 / `io_uring` 为什么快，首先需要理解现代操作系统中的用户态和内核态。

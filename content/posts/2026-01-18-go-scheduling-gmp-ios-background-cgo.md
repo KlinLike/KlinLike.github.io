@@ -1,7 +1,8 @@
 ---
 title:  "Gomobile 避坑：CGO导致的线程爆炸与iOS后台策略"
 date: 2026-01-18T19:09:30+08:00
-tags: [golang, gmp, scheduler]
+categories: [编程语言]
+tags: [golang, concurrency, mobile]
 ---
 
 最近遇到一个需求，需要将Go编写的库通过Gomobile编译成.xcframework文件放在iOS App里运行。总的资源用量不大，但每次程序进入后台，都会很快被杀，好一顿排查后，发现和Goroutine的调度策略以及iOS的后台管理策略有关，下面我会就这个问题谈一下我的理解。

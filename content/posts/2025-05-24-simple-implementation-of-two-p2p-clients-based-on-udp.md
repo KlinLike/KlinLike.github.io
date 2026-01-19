@@ -1,7 +1,8 @@
 ---
-title:  "两个P2P通信客户端的简单实现（基于UDP）"
+title: "两个P2P通信客户端的简单实现（基于UDP）"
 date: 2025-05-24T20:00:05+08:00
-tags: [p2p, udp, socket, network, cpp]
+categories: [网络]
+tags: [p2p, udp, socket, networking, cpp]
 ---
 
 目标：实现一个尽可能简单的、基于UDP的P2P通信程序。

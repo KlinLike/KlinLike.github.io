@@ -1,7 +1,8 @@
 ---
-title:  "seq num 在握手阶段和传输阶段的不同含义"
+title: "seq num 在握手阶段和传输阶段的不同含义"
 date: 2025-08-06T18:33:14+08:00
-tags: [tcp, networking, protocol, sequence-number]
+categories: [网络]
+tags: [tcp, networking, protocol]
 ---
 
 最近在学习TCP协议栈，发现一个令人困惑的点：既然TCP头部中的seq num是已发送的数据长度，那三次握手中没有任何数据传输，seq num不应该增加才对，为什么也会增长呢？
