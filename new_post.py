@@ -21,20 +21,21 @@ def create_hugo_post_template():
     full_timestamp = now.strftime('%Y-%m-%dT%H:%M:%S+08:00')
 
     # 3. 定义占位符和文件名
-    category = "uncategorized"
     slug = "new-post"
     
     # 确保 content/posts 目录存在
     posts_dir = 'content/posts'
     if not os.path.exists(posts_dir):
         os.makedirs(posts_dir)
-    filename = os.path.join(posts_dir, f"{current_date}-{category}-{slug}.md")
+    filename = os.path.join(posts_dir, f"{current_date}-{slug}.md")
 
     # 4. 定义 Hugo Front Matter 模板
+    # 分类选项：编程语言、并发、网络、系统与性能、软件工程、工具与流程
     template = f"""---
 title: "在此输入标题"
 date: {full_timestamp}
-tags: [TAG1, TAG2]
+categories: [CATEGORY]
+tags: [tag1, tag2, tag3]
 draft: false
 ---
 
@@ -45,8 +46,12 @@ draft: false
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(template)
         print(f"[OK] 成功创建新文章模板: {filename}")
-        print("     请修改文件中的 TITLE, TAG1, TAG2 并开始写作。")
-        print(f"     本地预览: http://localhost:1313/posts/{current_date}-{category}-{slug}/")
+        print("")
+        print("     请参考 TAGS.md 选择分类和标签：")
+        print("     - categories: 编程语言、并发、网络、系统与性能、软件工程、工具与流程")
+        print("     - tags: 使用小写字母 + 连字符，如 cpp, networking, design-pattern")
+        print("")
+        print(f"     本地预览: http://localhost:1313/")
     except IOError as e:
         print(f"[ERROR] 创建文件时出错: {e}")
 
