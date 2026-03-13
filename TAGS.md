@@ -59,6 +59,8 @@
 - `memory` - 内存管理
 - `io-uring` - io_uring 技术
 - `zero-copy` - 零拷贝
+- `embedded` - 嵌入式系统
+- `rendering` - 渲染管线（GPU合成、DMA推屏等）
 
 ### 数据结构与算法
 
