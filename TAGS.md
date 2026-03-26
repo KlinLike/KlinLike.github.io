@@ -61,6 +61,7 @@
 - `zero-copy` - 零拷贝
 - `embedded` - 嵌入式系统
 - `rendering` - 渲染管线（GPU合成、DMA推屏等）
+- `uart` - UART 串口协议
 
 ### 数据结构与算法
 
