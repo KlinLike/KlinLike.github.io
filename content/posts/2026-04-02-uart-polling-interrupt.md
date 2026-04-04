@@ -1,5 +1,5 @@
 ---
-title: "从查询到中断：STM32 UART 三种通信方式（一）"
+title: "STM32 UART 通信方式（一）：查询与中断"
 date: 2026-04-02T19:40:24+08:00
 categories: [系统与性能]
 tags: [embedded, uart, interrupt]
