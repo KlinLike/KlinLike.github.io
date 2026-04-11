@@ -36,6 +36,25 @@ int fputc(int ch, FILE *f)
 
 **DMA**：硬件自动搬运，CPU完全解放。但有启动开销，而且DMA通道有限。**不选择DMA的原因**：启动开销太大，发送1Byte的数据，非常不划算。
 
+## 不够好的实现：用 `HAL_UART_Transmit`
+
+```c
+int fputc(int ch, FILE *f)
+{
+    uint8_t c = (uint8_t)ch;
+    HAL_UART_Transmit(&huart1, &c, 1, HAL_MAX_DELAY);
+    return ch;
+}
+```
+
+这个实现因为用到了HAL函数，会走HAL的标准流程，内部会检查huart1的状态，等待TXE，写DR。
+问题是，每个字节都会进一次HAL函数调用，有锁判断、状态检查等开销。更致命的是，如果此时DMA TX正在进行（比如UART复用，既要发送应用数据，也要输出调试信息），HAL会返回`HAL_BUSY`，这个字节就丢了。
+
+对比着看，首选的方案优势在于：
+
+1. printf可以在任何时候被调用，哪怕DMA TX正忙
+2. 调试打印追求的是“稳定的输出”，而不是“架构优雅”
+
 ## fgetc和__backspace
 
 ### fgetc
@@ -73,8 +92,9 @@ int fgetc(FILE *f) {
 为什么需要__backspace？
 scanf 是格式化输入，比如 `scanf("%d", &x)` 只接受数字。如果用户输入 `12abc`，scanf 会读取 `12`，遇到 `a` 时发现不符合格式，需要把 `a` "退回"给输入流。
 
+实现很简单，就是用一个 static 变量临时保存退回的字符：
+
 ```c
-// __backspace用到的static变量 -> 其实这个功能很简单，就是临时保存一个退回的字符
 static uint8_t last_char;
 static int backspace_flag = 0;
 
