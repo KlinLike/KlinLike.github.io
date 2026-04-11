@@ -6,6 +6,13 @@ tags: [embedded, uart, c]
 draft: false
 ---
 
+## MicroLIB
+
+开始前，建议在Keil里打开MicroLIB：Options for Target → Target → 勾选 Use MicroLIB。
+MicroLIB提供了 `__weak` 版本的 `fputc` / `fgetc` / `__backspace`，而且默认是空实现，方便用户进行重定向。
+
+[相关代码改动](https://github.com/KlinLike/hal-driver-study/commit/ea26358)
+
 ## fputc是什么，为什么要重写
 
 fputc是C标准库里"输出一个字符"的底层函数。printf内部就是循环调用fputc把字符一个个写出去的。
