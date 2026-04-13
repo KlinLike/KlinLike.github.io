@@ -6,7 +6,7 @@ tags: [embedded, ui, c]
 draft: false
 ---
 
-> 本文的实现基于杰理SDK的字体引擎，相关基础知识见 [杰理字体引擎：CJK判定、文字方向与自动换行](/p/font-engine-cjk-wrap/)。
+> 本文的实现基于杰理SDK的字体引擎，相关基础知识见 [杰理字体引擎：CJK判定、文字方向与自动换行](/posts/2026-04-13-font-engine-cjk-wrap/)。
 
 整体设计可以分为三个阶段：**解析 → 排版 → 绘制**
 
