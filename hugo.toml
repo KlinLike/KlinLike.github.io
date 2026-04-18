@@ -101,6 +101,13 @@ copyright = "Klin"
   [menu.social.params]
     icon = "brand-github"
 
+[[menu.social]]
+  identifier = "email"
+  name = "Email"
+  url = "mailto:mi-cheng@outlook.com"
+  [menu.social.params]
+    icon = "mail"
+
 # 输出格式
 [outputs]
   home = ["HTML", "RSS", "JSON"]
