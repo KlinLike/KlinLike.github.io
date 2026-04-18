@@ -104,7 +104,7 @@ copyright = "Klin"
 [[menu.social]]
   identifier = "email"
   name = "Email"
-  url = "mailto:mi-cheng@outlook.com"
+  url = "https://outlook.live.com/mail/0/deeplink/compose?to=mi-cheng@outlook.com"
   [menu.social.params]
     icon = "mail"
 
