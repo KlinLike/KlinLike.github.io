@@ -36,7 +36,7 @@ copyright = "Klin"
   # 侧边栏配置
   [params.sidebar]
     emoji = "🍉"
-    subtitle = "我的blog，记录在开发中遇到的问题、想法、解决方案等，欢迎讨论和指正。"
+    subtitle = "软件工程师的技术笔记：记录踩坑、提炼方法、持续迭代"
     
     [params.sidebar.avatar]
       enabled = false  # 禁用图片头像，只显示 emoji

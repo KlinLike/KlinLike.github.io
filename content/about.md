@@ -1,18 +1,19 @@
 ---
-title: "About"
-date: 2024-01-01T00:00:00+08:00
+title: "关于"
+date: 2026-04-20T00:00:00+08:00
 ---
 
-你好，我是 Klin🍉
+## 关于我
 
-欢迎来到我的个人博客，我现在的职业是程序员，我会在这个Blog记录一些我在开发中遇到的问题、想法、解决方案等。
+你好，我是 Klin 🍉
 
+一名软件工程师，目前专注于嵌入式开发。
 
-### 请联系我
+这个博客是我的技术笔记：记录踩坑、提炼方法、持续迭代。
 
-如果你有想要探讨的问题或发现了我的错误，请联系我，这对我很重要。
+## 联系我
 
-* **GitHub**: [KlinLike](https://github.com/KlinLike)
-* **Email**: `mi-cheng@outlook.com`
+有问题想探讨，或发现我的错误？欢迎联系：
 
-感谢你的来访！
+- GitHub: [KlinLike](https://github.com/KlinLike)
+- Email: [mi-cheng@outlook.com](mailto:mi-cheng@outlook.com)
