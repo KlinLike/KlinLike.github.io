@@ -62,6 +62,7 @@
 - `embedded` - 嵌入式系统
 - `rendering` - 渲染管线（GPU合成、DMA推屏等）
 - `uart` - UART 串口协议
+- `spi` - SPI 总线协议
 - `i2c` - I2C 总线协议
 
 ### 数据结构与算法
