@@ -22,6 +22,9 @@ copyright = "Klin"
   
   # 网站描述
   description = "记录我在开发中遇到的问题、想法、解决方案等"
+
+  # 标签页图标（西瓜 emoji）
+  favicon = "/favicon.svg"
   
   # 页脚配置
   [params.footer]
