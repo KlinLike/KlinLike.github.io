@@ -34,6 +34,7 @@
 - `atomic` - 原子操作
 - `cas` - Compare-And-Swap
 - `mutex` - 互斥锁
+- `semaphore` - 信号量
 - `condition-variable` - 条件变量
 - `coroutine` - 协程
 - `async` - 异步编程
