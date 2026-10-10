@@ -1,66 +1,57 @@
 /*
-*   字体：正文用系统 UI 字体；代码、标题、站点名、日期、标签的西文用自托管的
-*   JetBrains Mono（等宽）。中文统一回退到各平台系统黑体
+*   字体：全站使用自托管的 IBM Plex 家族
+*   - 西文：IBM Plex Mono（等宽）
+*   - 中文：IBM Plex Sans SC，裁剪到 GB2312 全部 6763 个汉字 + 现有文章用字 + 常用符号，缺字回退到系统中文字体
 *
-*   unicode-range 只覆盖 ASCII 和 Latin-1，刻意不含 U+2000-206F，
-*   让中文里的 “” ‘’ … — 等标点落到中文字体上，避免被渲染成半角窄字形
+*   Plex Mono 的 unicode-range 刻意不含 U+2000-206F，
+*   让中文里的 “” ‘’ … — 由 Plex Sans SC 显示成全角
 */
-$latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+20AC, U+2122, U+2190-2193,
-    U+2212, U+2215, U+FEFF, U+FFFD;
+$plex-mono-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+20AC, U+2122, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+
+@mixin plex-mono($weight, $style) {
+    @font-face {
+        font-family: "IBM Plex Mono";
+        font-style: $style;
+        font-weight: $weight;
+        font-display: swap;
+        src: url("/fonts/ibm-plex-mono-latin-#{$weight}-#{$style}.woff2") format("woff2");
+        unicode-range: $plex-mono-range;
+    }
+}
+
+@include plex-mono(400, normal);
+@include plex-mono(700, normal);
+@include plex-mono(400, italic);
+@include plex-mono(700, italic);
 
 @font-face {
-    font-family: "JetBrains Mono";
+    font-family: "IBM Plex Sans SC";
     font-style: normal;
-    font-weight: 100 800;
+    font-weight: 400;
     font-display: swap;
-    src: url("/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations"),
-        url("/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2");
-    unicode-range: $latin-range;
+    src: url("/fonts/ibm-plex-sans-sc-regular.woff2") format("woff2");
 }
 
 @font-face {
-    font-family: "JetBrains Mono";
-    font-style: italic;
-    font-weight: 100 800;
+    font-family: "IBM Plex Sans SC";
+    font-style: normal;
+    font-weight: 700;
     font-display: swap;
-    src: url("/fonts/jetbrains-mono-latin-wght-italic.woff2") format("woff2-variations"),
-        url("/fonts/jetbrains-mono-latin-wght-italic.woff2") format("woff2");
-    unicode-range: $latin-range;
+    src: url("/fonts/ibm-plex-sans-sc-bold.woff2") format("woff2");
 }
 
 :root {
-    /* 西文系统字体：macOS/iOS、Windows、Android、Linux */
-    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, Cantarell,
-        "Noto Sans", Arial;
-    /* 网络字体加载前/失败时的系统等宽字体：Windows、macOS/iOS、Linux、Android */
-    --mono-fallback: Consolas, "Cascadia Mono", Menlo, Monaco, "DejaVu Sans Mono", "Liberation Mono", "Ubuntu Mono",
-        "Roboto Mono", "Droid Sans Mono";
     --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC",
         "Noto Sans SC", "Source Han Sans SC", "WenQuanYi Micro Hei";
+    /* 字体加载失败时代码仍保持等宽：Windows、macOS/iOS、Linux、Android */
+    --mono-fallback: Consolas, "Cascadia Mono", Menlo, Monaco, "DejaVu Sans Mono", "Liberation Mono", "Ubuntu Mono",
+        "Roboto Mono", "Droid Sans Mono";
     --emoji-font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 
-    --base-font-family: var(--sys-font-family), var(--zh-font-family), var(--emoji-font-family), sans-serif;
-    --code-font-family: "JetBrains Mono", var(--mono-fallback), var(--zh-font-family), monospace;
-    --mono-ui-font-family: "JetBrains Mono", var(--mono-fallback), var(--zh-font-family), var(--emoji-font-family),
-        monospace;
-}
-
-.site-name,
-.article-title,
-.article-time,
-.article-category,
-.article-tags,
-.article-content :is(h1, h2, h3, h4, h5, h6) {
-    font-family: var(--mono-ui-font-family);
-}
-
-/* 关闭 JetBrains Mono 的编程连字（=> != 等），读者复制代码时所见即所得 */
-.site-name,
-.article-title,
-.article-content :is(h1, h2, h3, h4, h5, h6),
-code,
-pre {
-    font-variant-ligatures: none;
+    --base-font-family: "IBM Plex Mono", "IBM Plex Sans SC", var(--zh-font-family), var(--emoji-font-family),
+        sans-serif;
+    --code-font-family: "IBM Plex Mono", var(--mono-fallback), "IBM Plex Sans SC", var(--zh-font-family), monospace;
 }
 
 /* 手机上菜单按钮绝对定位在右上角，不占布局空间，需要给站点标题区让出位置 */
