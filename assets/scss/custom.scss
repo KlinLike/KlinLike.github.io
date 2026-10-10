@@ -1,0 +1,87 @@
+/*
+*   字体：正文用系统 UI 字体；代码、标题、站点名、日期、标签的西文用自托管的
+*   JetBrains Mono（等宽）。中文统一回退到各平台系统黑体
+*
+*   unicode-range 只覆盖 ASCII 和 Latin-1，刻意不含 U+2000-206F，
+*   让中文里的 “” ‘’ … — 等标点落到中文字体上，避免被渲染成半角窄字形
+*/
+$latin-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+20AC, U+2122, U+2190-2193,
+    U+2212, U+2215, U+FEFF, U+FFFD;
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2-variations"),
+        url("/fonts/jetbrains-mono-latin-wght-normal.woff2") format("woff2");
+    unicode-range: $latin-range;
+}
+
+@font-face {
+    font-family: "JetBrains Mono";
+    font-style: italic;
+    font-weight: 100 800;
+    font-display: swap;
+    src: url("/fonts/jetbrains-mono-latin-wght-italic.woff2") format("woff2-variations"),
+        url("/fonts/jetbrains-mono-latin-wght-italic.woff2") format("woff2");
+    unicode-range: $latin-range;
+}
+
+:root {
+    /* 西文系统字体：macOS/iOS、Windows、Android、Linux */
+    --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Ubuntu, Cantarell,
+        "Noto Sans", Arial;
+    /* 网络字体加载前/失败时的系统等宽字体：Windows、macOS/iOS、Linux、Android */
+    --mono-fallback: Consolas, "Cascadia Mono", Menlo, Monaco, "DejaVu Sans Mono", "Liberation Mono", "Ubuntu Mono",
+        "Roboto Mono", "Droid Sans Mono";
+    --zh-font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei UI", "Microsoft YaHei", "Noto Sans CJK SC",
+        "Noto Sans SC", "Source Han Sans SC", "WenQuanYi Micro Hei";
+    --emoji-font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+
+    --base-font-family: var(--sys-font-family), var(--zh-font-family), var(--emoji-font-family), sans-serif;
+    --code-font-family: "JetBrains Mono", var(--mono-fallback), var(--zh-font-family), monospace;
+    --mono-ui-font-family: "JetBrains Mono", var(--mono-fallback), var(--zh-font-family), var(--emoji-font-family),
+        monospace;
+}
+
+.site-name,
+.article-title,
+.article-time,
+.article-category,
+.article-tags,
+.article-content :is(h1, h2, h3, h4, h5, h6) {
+    font-family: var(--mono-ui-font-family);
+}
+
+/* 关闭 JetBrains Mono 的编程连字（=> != 等），读者复制代码时所见即所得 */
+.site-name,
+.article-title,
+.article-content :is(h1, h2, h3, h4, h5, h6),
+code,
+pre {
+    font-variant-ligatures: none;
+}
+
+/* 手机上菜单按钮绝对定位在右上角，不占布局空间，需要给站点标题区让出位置 */
+@media (max-width: 767.98px) {
+    .left-sidebar header {
+        padding-inline-end: 50px;
+    }
+}
+
+/* 代码块默认继承正文字号（16-17px），在手机上一行放不下几个字符 */
+.article-content {
+    pre,
+    .highlight {
+        font-size: 1.35rem;
+
+        @include respond(md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    :not(pre) > code {
+        font-size: 0.9em;
+    }
+}
