@@ -24,4 +24,4 @@ date: 2026-04-20T00:00:00+08:00
 有问题想探讨，或发现我的错误？欢迎联系：
 
 - GitHub: [KlinLike](https://github.com/KlinLike)
-- Email: [mi-cheng@outlook.com](mailto:mi-cheng@outlook.com)
+- Email: [klinlike@outlook.com](mailto:klinlike@outlook.com)
